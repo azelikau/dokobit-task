@@ -1,0 +1,17 @@
+file-upload:
+  request-max-size: 100MB
+
+spring:
+  servlet:
+    multipart:
+      enabled: false
+  task:
+    execution:
+      pool:
+        core-size: 10
+        max-size: 50
+      thread-name-prefix: application-task
+
+logging:
+  level:
+    com.dokobit.dokobit_task: debug
